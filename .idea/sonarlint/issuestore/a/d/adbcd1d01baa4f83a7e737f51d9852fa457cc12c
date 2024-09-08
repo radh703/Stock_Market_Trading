@@ -1,0 +1,22 @@
+
+w
+java:S11929"UDefine a constant instead of duplicating this literal "Raw API response: {}" 3 times.(¢†Ğûùÿÿÿÿ8Ê‘İâõ1
+Š
+java:S1488a"hImmediately return this expression instead of assigning it to the temporary variable "rawResponseValue".(‚ãü½ÿÿÿÿÿ8Ë‘İâõ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(€Ñ¡ùÿÿÿÿ8Î‘İâõ1
+k
+java:S2259_"IA "NullPointerException" could be thrown; "rawResponse" is nullable here.(Æ½¨ıÿÿÿÿ8ö‘İâõ1
+r
+java:S3655N"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ÀÁ¹§ÿÿÿÿÿ8ö‘İâõ1
+m
+java:S3655,"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(»‘ãÔ8ö‘İâõ1
+X	java:S125#"<This block of commented-out lines of code should be removed.(øğäü8˜’İâõ1
+X	java:S125^"<This block of commented-out lines of code should be removed.(ıòê®8¦’İâõ1
+l
+java:S1128"ORemove this unused import 'org.springframework.beans.factory.annotation.Value'.(ìø›8“ââõ1
+;
+java:S1128"Remove this duplicated import.(´‘¨™8¯’İâõ1
+r
+java:S1128"PRemove this unused import 'tn.esprit.projectbackend.Entity.PortfolioInvestment'.(•í¯àùÿÿÿÿ8”ââõ1
+f
+java:S1128"DRemove this unused import 'tn.esprit.projectbackend.Entity.Pridect'.(û¢ÜÂûÿÿÿÿ8”ââõ1

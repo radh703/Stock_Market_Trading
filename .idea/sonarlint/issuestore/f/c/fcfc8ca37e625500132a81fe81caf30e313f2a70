@@ -1,0 +1,13 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(öÕŽã
+i	java:S116"ORename this field "Date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ÀƒÓûÿÿÿÿ
+Q	java:S125$"<This block of commented-out lines of code should be removed.(àÕó
+c
+java:S1128"HRemove this unused import 'com.fasterxml.jackson.annotation.JsonFormat'.(ýÙè‹øÿÿÿÿ
+K
+java:S1128
+"0Remove this unused import 'java.time.LocalDate'.(›‘¬èýÿÿÿÿ
+E
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤þÿÿÿÿ
+F
+java:S1128"+Remove this unused import 'java.util.UUID'.(ÀãÄ£úÿÿÿÿ

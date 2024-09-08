@@ -1,0 +1,4 @@
+Activate private envirement in python 
+.\fastml\Scripts\activate 
+command to start deploying 
+uvicorn nameOftheMondel:app --reload

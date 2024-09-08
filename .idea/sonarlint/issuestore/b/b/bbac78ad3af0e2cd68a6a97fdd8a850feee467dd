@@ -1,0 +1,7 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(öÕã8İ—§ê1
+k	java:S116"ORename this field "Open" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·Óë§8ÇñŸê1
+j	java:S116"ORename this field "High" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“Øå`8ÂÅ‚Ÿê1
+o	java:S116"NRename this field "Low" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“œ†¨ıÿÿÿÿ8ÂÅ‚Ÿê1
+l	java:S116"PRename this field "Close" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒèºı8ÂÅ‚Ÿê1
+p	java:S116"TRename this field "Adj_close" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏİÔ¥8ÎŞ‚Ÿê1

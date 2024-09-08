@@ -1,0 +1,10 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(öÕã8Ş«¤ß1
+m	java:S116"QRename this field "UserId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°©şü8ß«¤ß1
+q	java:S116"PRename this field "FName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø×ãÔşÿÿÿÿ8ß«¤ß1
+l	java:S116"PRename this field "LName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸“‘•8ß«¤ß1
+r	java:S116"VRename this field "PhoneNumber" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËÔÁ¹8ß«¤ß1
+v
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ì¾æÄÿÿÿÿÿ8£Š»ç1
+U
+java:S1128"8Remove this unused import 'java.awt.font.NumericShaper'.(¯áµ·8£Š»ç1

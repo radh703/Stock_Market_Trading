@@ -1,0 +1,8 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(öÕŽã
+^
+java:S1128"<Remove this unused import 'jakarta.transaction.Transaction'.(³“×Ðýÿÿÿÿ8ÔñÈ…ß1
+H
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8ÕñÈ…ß1
+M
+java:S1128"+Remove this unused import 'java.util.UUID'.(ÀãÄ£úÿÿÿÿ8ÕñÈ…ß1
