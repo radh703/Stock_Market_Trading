@@ -9,8 +9,6 @@ import lombok.*;
 
 import java.util.Date;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonFormat;
 
 
 @Entity

@@ -97,7 +97,7 @@ export const rootRouterConfig: Routes =
   },
   {
     path: '**',
-    redirectTo: 'sessions/404'
+    redirectTo: 'dashboard'
   }
 ];
 

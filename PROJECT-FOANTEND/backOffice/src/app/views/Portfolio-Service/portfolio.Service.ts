@@ -42,6 +42,6 @@ import { ConfigService } from './Config.service';
         return this.http.post(this.url+"/portfolio/get-prediction-portfolios/"+id,null)
     }
     updateOrder(data){
-      return this.http.put(this.url+"/ProInvestment/add-portfolio-Investment",  data);
+      return this.http.put(this.url+"/ProInvestment/modify-order",  data);
     }
   }

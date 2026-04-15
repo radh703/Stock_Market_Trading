@@ -2,7 +2,9 @@
 
 from fastapi import FastAPI,  HTTPException, Body
 import pickle
-from typing import Optional 
+from typing import Optional
+from pathlib import Path
+import os
 import pandas as pd
 from sklearn.cluster import DBSCAN
 import numpy as np
@@ -12,9 +14,11 @@ from dbscan_module import DbscanClustering
 app = FastAPI()
 @app.get('/')
 async def scoring_endpoint():
-    return {"hello":"word"}
+    return {"hello":"world"}
 
-with open("C:/Users/DELL/Desktop/PIDEV-PROJECT-PIONEER/PIDEV-Machine-Learning/dbscan_model.pkl", "rb") as model_file:
+default_model_path = Path(__file__).resolve().parent / "dbscan_model.pkl"
+model_path = Path(os.getenv("DBSCAN_MODEL_PATH", str(default_model_path)))
+with open(model_path, "rb") as model_file:
 
     loaded_dbscan_instance = pickle.load(model_file)
 
@@ -23,7 +27,7 @@ with open("C:/Users/DELL/Desktop/PIDEV-PROJECT-PIONEER/PIDEV-Machine-Learning/db
 async def apply_dbscan(
     esp_value: Optional[float] = 5,
     min_samples_value: Optional[int] = 5,
-    csv_filename: Optional[str] = "c:/Users/DELL/Desktop/PI_infini/historical_data.csv",
+    csv_filename: Optional[str] = str(Path(__file__).resolve().parent / "data_with_indicateur.csv"),
     k: Optional[int] = 3,
 ):
     try:

@@ -6,15 +6,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import tn.esprit.projectbackend.Entity.Portfolio;
-import tn.esprit.projectbackend.Entity.Pridect;
 import tn.esprit.projectbackend.Service.IPortfolioService;
-import org.springframework.http.ResponseEntity;
-
-
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 @CrossOrigin("http://localhost:4200/")
 @RestController
 @AllArgsConstructor
@@ -65,8 +58,8 @@ public class PortfolioResController {
     }
 
 @GetMapping("/get-clustred-portfolios")
-  public List<Map<Long, Portfolio>> getPortfolioByCluster() {
-    List<Map<Long, Portfolio>> listAllPortfolios = portfolioService.getPortfolioByCluster();
+  public List<Portfolio> getPortfolioByCluster() {
+    List<Portfolio> listAllPortfolios = portfolioService.getPortfolioByCluster();
     return listAllPortfolios;
 }
     @PostMapping("/get-prediction-portfolios/{portfolio-id}")

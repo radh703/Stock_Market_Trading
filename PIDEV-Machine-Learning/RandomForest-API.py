@@ -1,8 +1,7 @@
 from fastapi import FastAPI, HTTPException
-from typing import Optional 
-import json
+from pathlib import Path
+import os
 from pydantic import BaseModel
-from keras.models import load_model
 import numpy as np
 import pickle
 
@@ -28,7 +27,9 @@ async def prediction_volume(item: VolumesItem):
         array_list = np.array(values_list).reshape(1, -1)
         
         # Load the model
-        with open("C:/Users/DELL/Desktop/PIDEV-PROJECT-PIONEER/PIDEV-Machine-Learning/random_model.pkl", "rb") as model_file:
+        default_model_path = Path(__file__).resolve().parent / "random_model.pkl"
+        model_path = Path(os.getenv("RANDOM_FOREST_MODEL_PATH", str(default_model_path)))
+        with open(model_path, "rb") as model_file:
             loaded_prediction_instance = pickle.load(model_file)
         
         # Make predictions
@@ -40,9 +41,8 @@ async def prediction_volume(item: VolumesItem):
         # Debugging: print predicted_value_list
         print("Predicted value list:", predicted_value_list)
 
-        # Convert the list to JSON
-        predicted_json = json.dumps(predicted_value_list)
-        return {predicted_json}
+        # Return a stable JSON contract for backend parsing
+        return {"prediction": float(predicted_value_list[0])}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
